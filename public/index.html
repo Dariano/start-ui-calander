@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="calendarDemoApp" id="top">
+<head>
+    <title>AngularUI Calendar for AngularJS</title>
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="../bower_components/bootstrap-css/css/bootstrap.css" />
+    <link rel="stylesheet" href="../bower_components/fullcalendar/dist/fullcalendar.css">
+    <link rel="stylesheet" href="calendarDemo.css" />
+
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/jquery-ui/jquery-ui.js"></script>
+
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="../bower_components/bootstrap-css/js/bootstrap.js"></script>
+    <script src="../bower_components/moment/moment.js"></script>
+    <script src="../bower_components/fullcalendar/dist/fullcalendar.js"></script>
+    <script src="../bower_components/fullcalendar/dist/gcal.js"></script>
+    <script src="../bower_components//angular-ui-calendar/src/calendar.js"></script>
+    
+     <!--<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/1.6.1/fullcalendar.min.css" />
+   
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.0/jquery-ui.js"></script>
+   
+     <script data-require="angular.js@1.3.x" src="https://code.angularjs.org/1.3.13/angular.js" data-semver="1.3.13"></script>
+    
+    <script type="text/javascript" src="https://rawgit.com/angular-ui/ui-calendar/v0.1.3/src/calendar.js"></script>
+   
+   
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/1.6.1/fullcalendar.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/1.6.1/gcal.min.js"></script>-->
+    
+    <script src="calendarDemo.js"></script>
+</head>
+<body  ng-controller="MainCtrl as vm">     
+    <div role="main">
+        <div class="container">
+            <div class="well row-fluid">
+                <div ui-calendar="vm.uiConfig.calendar" ng-model="vm.eventSources"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
