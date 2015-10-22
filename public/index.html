@@ -30,20 +30,23 @@
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/1.6.1/fullcalendar.min.js"></script>
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/1.6.1/gcal.min.js"></script>-->
     
+    <script src="app.js"></script>
     <script src="calendarDemo.js"></script>
+    <script src="CalendarioController.js"></script>
+    <script src="Calendario.js"></script>
 </head>
 <body>     
     <div role="main">
-        <div class="container" ng-controller="MainCtrl as vm">
+        <div class="container" ng-controller="CalendarioController as ctrl">
             <div class="well row-fluid">
-                <div ui-calendar="vm.uiConfig.calendar" ng-model="vm.eventSources"></div>
+                <div ui-calendar="ctrl.uiConfig.calendar" ng-model="ctrl.eventSources"></div>
             </div>
         </div>
     </div>
     <div>
-        <div class="container" ng-controller="MainCtrl2 as vm2">
+        <div class="container" ng-controller="CalendarioController2 as ctrl2">
             <div class="well row-fluid">
-                <div ui-calendar="vm2.uiConfig.calendar" ng-model="vm2.eventSources"></div>
+                <div ui-calendar="ctrl2.uiConfig.calendar" ng-model="ctrl2.eventSources"></div>
             </div>
         </div>
     </div>
