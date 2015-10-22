@@ -32,11 +32,18 @@
     
     <script src="calendarDemo.js"></script>
 </head>
-<body  ng-controller="MainCtrl as vm">     
+<body>     
     <div role="main">
-        <div class="container">
+        <div class="container" ng-controller="MainCtrl as vm">
             <div class="well row-fluid">
                 <div ui-calendar="vm.uiConfig.calendar" ng-model="vm.eventSources"></div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="container" ng-controller="MainCtrl2 as vm2">
+            <div class="well row-fluid">
+                <div ui-calendar="vm2.uiConfig.calendar" ng-model="vm2.eventSources"></div>
             </div>
         </div>
     </div>
