@@ -68,7 +68,7 @@ angular.module('calendarDemoApp')
     if(view.name != 'month') return;
     
     var eventosDoDia = view.calendar.clientEvents(function(item){ return item.start.toObject().date == date.date() })
-    
+
     angular.forEach(eventosDoDia, function(item){
       view.calendar.removeEvents(item._id);
     });        
