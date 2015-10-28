@@ -36,17 +36,17 @@
     <script src="Calendario.js"></script>
 </head>
 <body>     
-    <div role="main">
+    <!--<div role="main">
         <div class="container" ng-controller="CalendarioController as ctrl">
             <div class="well row-fluid">
                 <div ui-calendar="ctrl.uiConfig.calendar" ng-model="ctrl.eventSources"></div>
             </div>
         </div>
-    </div>
+    </div>-->
     <div>
-        <div class="container" ng-controller="CalendarioController2 as ctrl2">
+        <div class="container" ng-controller="CalendarioController2">
             <div class="well row-fluid">
-                <div ui-calendar="ctrl2.uiConfig.calendar" ng-model="ctrl2.eventSources"></div>
+                <div ui-calendar="uiConfig.calendar" ng-model="eventSources" calendar="calendario"></div>
             </div>
         </div>
     </div>
